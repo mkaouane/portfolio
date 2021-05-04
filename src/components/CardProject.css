@@ -27,6 +27,7 @@
     background: #fff;
     border-radius: 8px;
     transform: skewX(15deg);
+    filter: blur(10px);
     transition: 0.5s
 }
 .cardContainer .box::after {
@@ -40,7 +41,7 @@
     border-radius: 8px;
     transform: skewX(15deg);
     transition: 0.5s;
-    filter: blur(30px);
+    filter: blur(70px);
     transition: 0.5s;
 }
 
@@ -56,11 +57,11 @@
 }
 .cardContainer .box:nth-child(2):before,
 .cardContainer .box:nth-child(2):after {
-    background: linear-gradient(315deg, #0a7899, #ff0058);
+    background: linear-gradient(315deg, #2eb8e2, #62e288);
 }
 .cardContainer .box:nth-child(3):before,
 .cardContainer .box:nth-child(3):after {
-    background: linear-gradient(315deg, #d69e04, #3695d4);
+    background: linear-gradient(315deg, #ffc012, #3695d4);
 }
 
 .cardContainer .box span {
@@ -90,10 +91,10 @@
 }
 
 .cardContainer .box:hover span::before {
-    top:-50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;
+    top: -80px;
+    left: 10px;
+    width: 95px;
+    height: 95px;
     opacity: 1;
 }
 
@@ -144,7 +145,7 @@
     background: rgba(255,255,255,0.05);
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     transition: 0.5s;
     color: #fff;
     border: 1px solid rgba(255,255,255,0.25);

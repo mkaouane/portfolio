@@ -1,0 +1,27 @@
+.imgBx img {
+    max-width: 400px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%, 100% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+}
+
+@media (max-width: 922px) {
+    
+    @keyframes animate 
+{
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+}
